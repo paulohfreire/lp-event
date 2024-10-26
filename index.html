@@ -55,7 +55,7 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
     }
 
@@ -66,7 +66,7 @@
     main {
       min-height: 100vh;
       margin: 0;
-      padding-top: 70px;
+      padding-top: 20px;
       background: linear-gradient(to bottom right,
           #030303 40%,
           #003E7B 110%);
@@ -302,15 +302,15 @@
 
   <header class="blog-header py-3" style="background-color: black;">
     <div class="container">
-      <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-2 col-lg-4 pt-1">
+      <div class="row flex-nowrap align-items-center">
+        <div class="col-2 col-lg-1 pt-1 pl-4">
           <a href="/"><img style="height: 60px;" src="https://i.ibb.co/XC0XNqy/zeroa100.jpg"
               alt="logo-removebg-preview"></a>
         </div>
-        <div class="col-9 col-lg-4 text-center">
+        <div class="col-10 col-lg-4 px-lg-1 pl-5 pl-lg-0">
           <a class="text-secondary" href="/">Engenheiro Daniel Fernandes</a>
         </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
+        <div class="col-lg-6 col-1 d-flex justify-content-end align-items-center">
 
           <!-- <a class="btn btn-sm btn-outline-secondary d-none d-lg-flex" href="#">INSCREVA-SE</a> -->
         </div>
@@ -324,9 +324,10 @@
         <div class="d-flex flex-column-reverse flex-lg-row">
           <!-- Left Column: Text and Form -->
           <div class="col-lg-6 mb-4 p-2 p-lg-3 mr-lg-5 px-4 px-lg-3">
-            <h1 class="pt-2 d-none d-lg-block mb-4"><b class="d-flex" style="text-transform: uppercase;">Conquiste
+            <h1 class="pt-2 pt-lg-3 d-none d-lg-block mb-4 text-left"><b class="d-flex"
+                style="text-transform: uppercase;">Conquiste
                 sua independência da CLT!</b></h1>
-            <h1 class="text-justify" style="letter-spacing: -1px;"><b
+            <h1 class="text-justify py-lg-3" style="letter-spacing: -1px;"><b
                 style="color: #007bff; letter-spacing: 0.2px">Aprenda a
                 empreender
               </b>
@@ -351,24 +352,25 @@
             </p>
 
 
-            <form class="py-2" id="contactForm">
+            <form class="py-2 d-block d-lg-none" id="contactForm" action="https://formspree.io/f/myzykyvl"
+              method="POST">
               <div class="mb-3">
-                <input type="text" id="name" class="form-control" placeholder="Nome" required>
+                <input type="text" name="name" id="full-name" class="form-control" placeholder="Nome" required>
               </div>
               <div class="mb-3">
-                <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+                <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
               </div>
               <div class="mb-3">
-                <input type="tel" id="phone" class="form-control" placeholder="Telefone" required>
+                <input type="tel" id="telephone" class="form-control" placeholder="Telefone" required>
               </div>
               <button type="submit" class="btn-form w-100 text-uppercase">Inscreva-se</button>
             </form>
           </div>
 
           <!-- Right Column: YouTube Video -->
-          <div class="col-lg-6 d-flex p-3 mt-1 ml-lg-4 justify-content-center">
+          <div class="col-lg-6 d-flex p-3 mt-1 pt-lg-4 ml-lg-4 justify-content-center">
             <div class="video-container ">
-              <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none"><b class="d-flex"
+              <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none text-center"><b class="d-flex"
                   style="text-transform: uppercase;">Conquiste
                   sua independência da CLT!</b></h1>
               <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=0">
@@ -380,13 +382,28 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-              <iframe id="youtube-video" width="360" height="345" class="d-block d-md-none"
+              <iframe id="youtube-video" width="350" height="345" class="d-block d-md-none"
                 src="https://www.youtube.com/embed/aEGRRY3-Ics?enablejsapi=1&autoplay=0&controls=0"
                 title="YouTube video Mobile"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
 
+
+              <form class="py-2 d-none d-lg-block pt-5" id="contactForm" action="https://formspree.io/f/myzykyvl"
+                method="POST">
+                <h1 class="text-center py-2" style="color: #007bff">Faça já sua inscrição:</h1>
+                <div class="mb-3">
+                  <input type="text" name="name" id="full-name" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" id="telephone" class="form-control" placeholder="Telefone" required>
+                </div>
+                <button type="submit" class="btn-form w-100 text-uppercase">Inscreva-se</button>
+              </form>
               <!-- <img class="img-fluid w-100 js-video-button video-thumbnail d-none d-lg-block"
             data-video-url='https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=1'
             src="https://i.ibb.co/hY8xJVT/zeroa100.jpg" alt="Preview vídeo como funciona DESKTOP">
