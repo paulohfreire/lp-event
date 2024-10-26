@@ -55,10 +55,8 @@
     }
 
     p {
-      text-align: left;
       font-size: 16px;
       font-weight: 400;
-
     }
 
     .text-secondary:hover {
@@ -75,6 +73,16 @@
       display: flex;
       justify-content: center;
 
+    }
+
+    @media (max-width: 991px) {
+      main {
+        padding-top: 0;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
     }
 
     .form-control,
@@ -315,24 +323,35 @@
       <div class="container">
         <div class="d-flex flex-column-reverse flex-lg-row">
           <!-- Left Column: Text and Form -->
-          <div class="col-lg-6 mb-4 p-2 p-lg-3 mr-lg-5 px-5 px-lg-0">
-            <h1 class="mt-2 mt-lg-0"><b class="d-flex" style="text-transform: uppercase;font-size: larger;">Conquiste
-                sua independência da CLT!</b><br>
-              <b style="color: #007bff">Aprenda a empreender </b>
-              com SST e comece a <b style="color: #007bff">faturar rápido</b> e de uma forma que jamais imaginou!
+          <div class="col-lg-6 mb-4 p-2 p-lg-3 mr-lg-5 px-4 px-lg-3">
+            <h1 class="pt-2 d-none d-lg-block mb-4"><b class="d-flex" style="text-transform: uppercase;">Conquiste
+                sua independência da CLT!</b></h1>
+            <h1 class="text-justify" style="letter-spacing: -1px;"><b
+                style="color: #007bff; letter-spacing: 0.2px">Aprenda a
+                empreender
+              </b>
+              com SST, comece a <b style="color: #007bff">faturar rápido</b> e de uma forma que jamais imaginou!
             </h1>
-            <p class="pt-5">Você não precisa esperar ser contratado para trabalhar com segurança do trabalho.</p>
-            <p style="font-weight: 600;">E se você é contratado de alguma empresa, mas gostaria de fazer uma renda extra
+
+            <p class="pt-4 text-justify">Você não precisa esperar ser contratado para trabalhar com segurança do
+              trabalho.</p>
+            <p class="text-justify" style="font-weight: 600;">E se você é contratado de alguma empresa, mas
+              gostaria de fazer uma renda
+              extra
               atuando na sua área, essa
               oportunidade também é pra você!</p>
-            <p>Eu vou te apresentar um curso dinâmico, sem enrolação e vou te mostrar em detalhes tudo o que você
-              precisa fazer para prospectar clientes, elaborar laudos ocupacionais e prestar todos os serviços possíveis
+            <p class="text-justify">Eu vou te apresentar um curso dinâmico, sem enrolação e vou te mostrar em detalhes
+              tudo o que você
+              precisa fazer para prospectar clientes, elaborar laudos ocupacionais e prestar todos os serviços
+              possíveis
               para profissionais de SST. </p>
-            <p class="pb-4" style="font-weight: 600;">
-              Se inscreva para entrar na lista de interessados e participar do grupo com as novidades sobre o nosso
+            <p class="pb-4 text-justify" style="font-weight: 600;">
+              Inscreva-se para entrar na lista de interessados e participar do grupo com as novidades sobre o nosso
               evento que vai acontecer nos dias 26 e 27 de novembro às 19 horas.
             </p>
-            <form class="pr-lg-5 py-2" id="contactForm">
+
+
+            <form class="py-2" id="contactForm">
               <div class="mb-3">
                 <input type="text" id="name" class="form-control" placeholder="Nome" required>
               </div>
@@ -349,7 +368,9 @@
           <!-- Right Column: YouTube Video -->
           <div class="col-lg-6 d-flex p-3 mt-1 ml-lg-4 justify-content-center">
             <div class="video-container ">
-
+              <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none"><b class="d-flex"
+                  style="text-transform: uppercase;">Conquiste
+                  sua independência da CLT!</b></h1>
               <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=0">
           </iframe> -->
 
@@ -401,11 +422,13 @@
       <ul class="list-unstyled d-flex justify-content-center">
         <li class="ms-2 p-1"><a class="" href="mailto:danielfernandes.consult@gmail.com"><i class="fa fa-envelope"
               aria-hidden="true"></i></a></li>
-        <li class="ms-2 p-1"><a class="" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <!-- <li class="ms-2 p-1"><a class="" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li> -->
+        <li class="ms-2 p-1"><a class="" href="https://www.instagram.com/engdanielfernandes/"><i class="fa fa-instagram"
+              aria-hidden="true"></i></a>
         </li>
-        <li class="ms-2 p-1"><a class="" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </li>
-        <li class="ms-2 p-1"><a class="" href="#"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        <li class="ms-2 p-1"><a class="" href="https://youtube.com/@engdanielfernandes?si=EwxfAymkD7DgyoGJ"><i
+              class="fab fa-youtube" aria-hidden="true"></i></a>
         </li>
 
       </ul>
