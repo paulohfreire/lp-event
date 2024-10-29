@@ -451,7 +451,23 @@
       }
 
       form.classList.remove('hidden'); // Show the form
+      forceRepaint(form);
     }
+
+    function forceRepaint(element) {
+      element.style.display = 'none';
+      element.offsetHeight; // Trigger a reflow
+      element.style.display = 'block';
+    }
+
+    // Fix for Android input focus issue
+    document.addEventListener('click', function (e) {
+      if (e.target.tagName === 'INPUT') {
+        setTimeout(() => {
+          e.target.focus();
+        }, 100); // Slight delay to ensure keyboard opens
+      }
+    });
 
     // Run on page load and on window resize
     window.addEventListener('load', moveForm);
@@ -462,7 +478,7 @@
     //Função para o form mobile
     $(document).ready(function () {
       $('#phone').mask('(00) 00000-0000');
-      $('#phone-mb').mask('(00) 00000-0000');
+
       // Handle form submission
       $('#contactForm').on('submit', function (e) {
         e.preventDefault(); // Prevent the page from reloading
