@@ -75,6 +75,8 @@
 
     }
 
+
+
     @media (max-width: 991px) {
       main {
         padding-top: 0;
@@ -139,6 +141,46 @@
       background-color: #010d18;
       padding: 40px 20px;
       text-align: center;
+    }
+
+    @media (max-width: 320px) {
+      header {
+        font-size: 1.2rem;
+      }
+
+      .form-container {
+        padding: 5px;
+      }
+
+      input,
+      button {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+
+      .btn {
+        padding: 10px;
+        /* Ensure the button remains usable */
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 399px) and (max-width: 766px) {
+      #youtube-video {
+        margin-left: 5%;
+        width: 360px;
+      }
     }
   </style>
 
@@ -219,9 +261,9 @@
 
           <!-- Right Column: YouTube Video -->
           <div class="col-lg-6 d-flex p-3 mt-1 pt-lg-4 ml-lg-4 justify-content-center">
-            <div class="video-container ">
-              <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none text-center"><b class="d-flex"
-                  style="text-transform: uppercase;">Conquiste
+            <div class="video-container">
+              <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none text-center">
+                <b class="d-flex" style="text-transform: uppercase;">Conquiste
                   sua independência da CLT!</b>
               </h1>
               <iframe id="youtube-video" width="540" height="345" class="d-none d-md-block"
@@ -230,7 +272,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-              <iframe id="youtube-video" width="350" height="345" class="d-block d-md-none"
+              <iframe id="youtube-video" width="310" height="345" class="d-flex d-md-none"
                 src="https://www.youtube.com/embed/aEGRRY3-Ics?enablejsapi=1&autoplay=0&controls=0"
                 title="YouTube video Mobile"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
