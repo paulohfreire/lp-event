@@ -140,15 +140,6 @@
       padding: 40px 20px;
       text-align: center;
     }
-
-    /* Mobile-specific form positioning */
-    @media (max-width: 767px) {
-      #form-container {
-        order: -1;
-        /* Move the form above the video on mobile */
-        width: 100%;
-      }
-    }
   </style>
 
 </head>
@@ -269,12 +260,7 @@
       </div>
     </div>
     </div>
-
-
-
   </main>
-
-
   <footer>
     <div class="d-flex flex-column flex-sm-row justify-content-around py-lg-2 p-3">
       <p class="text-dark pt-1">© 2024 Eng. Daniel Fernandes, Design by <a class="text-dark"
@@ -292,9 +278,7 @@
         <li class="ms-2 p-1"><a class="" href="https://youtube.com/@engdanielfernandes?si=EwxfAymkD7DgyoGJ"><i
               class="fab fa-youtube" aria-hidden="true"></i></a>
         </li>
-
       </ul>
-
     </div>
   </footer>
 
@@ -305,41 +289,7 @@
   <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-  <script>
-    // JavaScript to dynamically move the shared form
-    function moveForm() {
-      const isMobile = window.innerWidth < 768; // Bootstrap's md breakpoint
-      const form = document.getElementById('sharedForm');
 
-      if (isMobile) {
-        document.getElementById('form-container-mobile').appendChild(form);
-      } else {
-        document.getElementById('form-container-desktop').appendChild(form);
-      }
-
-      form.classList.remove('hidden'); // Show the form
-      forceRepaint(form);
-    }
-
-    function forceRepaint(element) {
-      element.style.display = 'none';
-      element.offsetHeight; // Trigger a reflow
-      element.style.display = 'block';
-    }
-
-    // Fix for Android input focus issue
-    document.addEventListener('click', function (e) {
-      if (e.target.tagName === 'INPUT') {
-        setTimeout(() => {
-          e.target.focus();
-        }, 100); // Slight delay to ensure keyboard opens
-      }
-    });
-
-    // Run on page load and on window resize
-    window.addEventListener('load', moveForm);
-    window.addEventListener('resize', moveForm);
-  </script>
 
   <script>
     //Função para o form mobile
@@ -351,8 +301,6 @@
         e.preventDefault(); // Prevent the page from reloading
       });
     });
-
-
 
 
   </script>
