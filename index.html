@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Do zero a 100 com SST</title>
 
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:image" content="image para url" />
+  <meta property="og:image" content="https://i.ibb.co/LZkxF0f/logo-removebg-preview.png" />
   <meta property="og:url" content="Inserir Url da página" />
-  <meta property="og:title" content="Titulo da página" />
-  <meta property="og:description" content="Descrição" />
+  <meta property="og:title" content="Do zero a 100 com SST" />
+  <meta property="og:description" content="Conquiste sua independência da CLT!" />
 
   <!--Favicon-->
   <link rel="icon" type="image/x-icon" href="https://i.ibb.co/LZkxF0f/logo-removebg-preview.png"
@@ -83,6 +83,8 @@
       h1 {
         font-size: 26px;
       }
+
+
     }
 
     .form-control,
@@ -351,20 +353,10 @@
               evento que vai acontecer nos dias 26 e 27 de novembro às 19 horas.
             </p>
 
+            <!--Form MOBILE-->
+            <div id="form-container-mobile" class="form-container d-block d-md-none"></div>
 
-            <form class="py-2 d-block d-lg-none" id="contactForm" action="https://formspree.io/f/myzykyvl"
-              method="POST">
-              <div class="mb-3">
-                <input type="text" name="name" id="full-name" class="form-control" placeholder="Nome" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
-              </div>
-              <div class="mb-3">
-                <input type="tel" id="telephone" class="form-control" placeholder="Telefone" required>
-              </div>
-              <button type="submit" class="btn-form w-100 text-uppercase">Inscreva-se</button>
-            </form>
+
           </div>
 
           <!-- Right Column: YouTube Video -->
@@ -372,10 +364,8 @@
             <div class="video-container ">
               <h1 class="my-2 py-2 mt-lg-0 d-block d-lg-none text-center"><b class="d-flex"
                   style="text-transform: uppercase;">Conquiste
-                  sua independência da CLT!</b></h1>
-              <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=0">
-          </iframe> -->
-
+                  sua independência da CLT!</b>
+              </h1>
               <iframe id="youtube-video" width="540" height="345" class="d-none d-md-block"
                 src="https://www.youtube.com/embed/aEGRRY3-Ics?enablejsapi=1&autoplay=0&controls=0"
                 title="YouTube video Desktop"
@@ -387,48 +377,36 @@
                 title="YouTube video Mobile"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+              <div class="d-none d-md-block"><br></div>
+              <!--Form DESKTOP-->
+              <h1 class="text-center py-2 d-none d-md-block" style="color: #007bff">Faça já sua inscrição:</h1>
+              <div id="form-container-desktop" class="form-container">
 
-
-
-              <form class="py-2 d-none d-lg-block pt-5" id="contactForm" action="https://formspree.io/f/myzykyvl"
-                method="POST">
-                <h1 class="text-center py-2" style="color: #007bff">Faça já sua inscrição:</h1>
-                <div class="mb-3">
-                  <input type="text" name="name" id="full-name" class="form-control" placeholder="Nome" required>
-                </div>
-                <div class="mb-3">
-                  <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
-                </div>
-                <div class="mb-3">
-                  <input type="tel" id="telephone" class="form-control" placeholder="Telefone" required>
-                </div>
-                <button type="submit" class="btn-form w-100 text-uppercase">Inscreva-se</button>
-              </form>
-              <!-- <img class="img-fluid w-100 js-video-button video-thumbnail d-none d-lg-block"
-            data-video-url='https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=1'
-            src="https://i.ibb.co/hY8xJVT/zeroa100.jpg" alt="Preview vídeo como funciona DESKTOP">
-
-          <img class="img-fluid w-100 js-video-button video-thumbnail d-block d-lg-none"
-            data-video-url='https://www.youtube.com/embed/OsjS5UeVsSQ?autoplay=1&controls=1'
-            src="https://i.ibb.co/hY8xJVT/zeroa100.jpg" alt="Preview vídeo como funciona MOBILE"> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- WhatsApp Section (Hidden initially) -->
-    <!-- <div id="whatsapp-section" class="hidden">
-      <div class="container text-center">
-        <h2>Obrigado por se inscrever!</h2>
-        <p>Clique agora no botão abaixo e faça parte do nosso grupo: </p>
-        <a href="https://chat.whatsapp.com/KndT7rqPu3945vuXWc0QTC" target="_blank" class="whatsapp-btn">
-          Entrar no grupo
-        </a>
-      </div>
-    </div> -->
+
 
   </main>
+  <!--Shared Form-->
+  <form id="sharedForm" class="pt-2" action="https://api.staticforms.xyz/submit" method="POST">
+    <input type="hidden" name="accessKey" value="af0ef850-1c61-4b82-ad01-68964488ad1d">
+    <div class="mb-3">
+      <input type="text" name="name" id="full-name" class="form-control" placeholder="Nome" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+    </div>
+    <div class="mb-3">
+      <input type="tel" id="phone-mb" name="phone" class="form-control" placeholder="Telefone" required>
+    </div>
+    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/group.html">
+    <button type="submit" class="btn-form w-100 text-uppercase">Inscreva-se</button>
+  </form>
 
   <footer>
     <div class="d-flex flex-column flex-sm-row justify-content-around py-lg-2 p-3">
@@ -459,52 +437,42 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="//unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
   <script>
+    // JavaScript to dynamically move the shared form
+    function moveForm() {
+      const isMobile = window.innerWidth < 768; // Bootstrap's md breakpoint
+      const form = document.getElementById('sharedForm');
+
+      if (isMobile) {
+        document.getElementById('form-container-mobile').appendChild(form);
+      } else {
+        document.getElementById('form-container-desktop').appendChild(form);
+      }
+
+      form.classList.remove('hidden'); // Show the form
+    }
+
+    // Run on page load and on window resize
+    window.addEventListener('load', moveForm);
+    window.addEventListener('resize', moveForm);
+  </script>
+
+  <script>
+    //Função para o form mobile
     $(document).ready(function () {
       $('#phone').mask('(00) 00000-0000');
-
+      $('#phone-mb').mask('(00) 00000-0000');
       // Handle form submission
       $('#contactForm').on('submit', function (e) {
         e.preventDefault(); // Prevent the page from reloading
-
-        // Replace form content with WhatsApp section
-        $('#form-section').html(`
-          <div class="container text-center card">
-            <h1 class="uppercase py-2">Obrigado por se inscrever!</h1>
-            <p class="py-3">Clique agora no botão abaixo e faça parte do nosso grupo: </p>
-            <a href="https://chat.whatsapp.com/KndT7rqPu3945vuXWc0QTC" target="_blank" class="whatsapp-btn">
-              Entrar no grupo
-            </a>
-          </div>
-        `);
       });
     });
 
 
+
+
   </script>
-
-  <!-- <script type="text/javascript">
-
-    /**
-     * modal-video:
-     *   license: appleple
-     *   author: appleple
-     *   homepage: //developer.a-blogcms.jp
-     *   version: 2.4.6
-     *
-     */
-    !function () { function e(t, n, o) { function i(a, l) { if (!n[a]) { if (!t[a]) { var u = "function" == typeof require && require; if (!l && u) return u(a, !0); if (r) return r(a, !0); var d = new Error("Cannot find module '" + a + "'"); throw d.code = "MODULE_NOT_FOUND", d } var c = n[a] = { exports: {} }; t[a][0].call(c.exports, function (e) { var n = t[a][1][e]; return i(n || e) }, c, c.exports, e, t, n, o) } return n[a].exports } for (var r = "function" == typeof require && require, a = 0; a < o.length; a++)i(o[a]); return i } return e }()({ 1: [function (e, t, n) { try { var o = new window.CustomEvent("test"); if (o.preventDefault(), !0 !== o.defaultPrevented) throw new Error("Could not prevent default") } catch (e) { var i = function (e, t) { var n, o; return t = t || { bubbles: !1, cancelable: !1, detail: void 0 }, n = document.createEvent("CustomEvent"), n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), o = n.preventDefault, n.preventDefault = function () { o.call(this); try { Object.defineProperty(this, "defaultPrevented", { get: function () { return !0 } }) } catch (e) { this.defaultPrevented = !0 } }, n }; i.prototype = window.Event.prototype, window.CustomEvent = i } }, {}], 2: [function (e, t, n) { "use strict"; function o(e, t) { if (void 0 === e || null === e) throw new TypeError("Cannot convert first argument to object"); for (var n = Object(e), o = 1; o < arguments.length; o++) { var i = arguments[o]; if (void 0 !== i && null !== i) for (var r = Object.keys(Object(i)), a = 0, l = r.length; a < l; a++) { var u = r[a], d = Object.getOwnPropertyDescriptor(i, u); void 0 !== d && d.enumerable && (n[u] = i[u]) } } return n } function i() { Object.assign || Object.defineProperty(Object, "assign", { enumerable: !1, configurable: !0, writable: !0, value: o }) } t.exports = { assign: o, polyfill: i } }, {}], 3: [function (e, t, n) { "use strict"; var o = e("../index"), i = function (e) { e.fn.modalVideo = function (e) { return "strings" == typeof e || new o(this, e), this } }; if ("function" == typeof define && define.amd) define(["jquery"], i); else { var r = window.jQuery ? window.jQuery : window.$; void 0 !== r && i(r) } t.exports = i }, { "../index": 5 }], 4: [function (e, t, n) { "use strict"; function o(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } Object.defineProperty(n, "__esModule", { value: !0 }); var i = function () { function e(e, t) { for (var n = 0; n < t.length; n++) { var o = t[n]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o) } } return function (t, n, o) { return n && e(t.prototype, n), o && e(t, o), t } }(); e("custom-event-polyfill"); var r = e("../lib/util"), a = e("es6-object-assign").assign, l = { channel: "youtube", facebook: {}, youtube: { autoplay: 1, cc_load_policy: 1, color: null, controls: 1, disablekb: 0, enablejsapi: 0, end: null, fs: 1, h1: null, iv_load_policy: 1, loop: 0, modestbranding: null, mute: 0, origin: null, playsinline: null, rel: 0, showinfo: 1, start: 0, wmode: "transparent", theme: "dark", nocookie: !1 }, ratio: "16:9", vimeo: { api: !1, autopause: !0, autoplay: !0, byline: !0, callback: null, color: null, controls: !0, height: null, loop: !1, maxheight: null, maxwidth: null, muted: !1, player_id: null, portrait: !0, title: !0, width: null, xhtml: !1 }, allowFullScreen: !0, allowAutoplay: !0, animationSpeed: 300, classNames: { modalVideo: "modal-video", modalVideoClose: "modal-video-close", modalVideoBody: "modal-video-body", modalVideoInner: "modal-video-inner", modalVideoIframeWrap: "modal-video-movie-wrap", modalVideoCloseBtn: "modal-video-close-btn" }, aria: { openMessage: "You just openned the modal video", dismissBtnMessage: "Close the modal by clicking here" } }, u = function () { function e(t, n) { var i = this; o(this, e); var u = a({}, l, n), d = "string" == typeof t ? document.querySelectorAll(t) : t, c = document.querySelector("body"), s = u.classNames, f = u.animationSpeed;[].forEach.call(d, function (e) { e.addEventListener("click", function (t) { "A" === e.tagName && t.preventDefault(); var n = e.dataset.videoId, o = e.dataset.channel || u.channel, a = (0, r.getUniqId)(), l = e.dataset.videoUrl || i.getVideoUrl(u, o, n), d = i.getHtml(u, l, a); (0, r.append)(c, d); var v = document.getElementById(a), m = v.querySelector(".js-modal-video-dismiss-btn"), p = void 0, b = function () { clearTimeout(p), p = setTimeout(function () { var e = i.getWidthFulfillAspectRatio(u.ratio, window.innerHeight, window.innerWidth), t = document.getElementById("modal-video-inner-" + a); t.style.maxWidth !== e && (t.style.maxWidth = e) }, 10) }; v.focus(), v.addEventListener("click", function () { (0, r.addClass)(v, s.modalVideoClose), window.removeEventListener("resize", b), setTimeout(function () { (0, r.remove)(v), e.focus() }, f) }), v.addEventListener("keydown", function (e) { 9 === e.which && (e.preventDefault(), document.activeElement === v ? m.focus() : (v.setAttribute("aria-label", ""), v.focus())) }), window.addEventListener("resize", b), m.addEventListener("click", function () { (0, r.triggerEvent)(v, "click") }) }) }) } return i(e, [{ key: "getPadding", value: function (e) { var t = e.split(":"), n = Number(t[0]); return 100 * Number(t[1]) / n + "%" } }, { key: "getWidthFulfillAspectRatio", value: function (e, t, n) { var o = e.split(":"), i = Number(o[0]), r = Number(o[1]); return t < n * (r / i) ? Math.floor(i / r * t) + "px" : "100%" } }, { key: "getQueryString", value: function (e) { var t = ""; return Object.keys(e).forEach(function (n) { t += n + "=" + e[n] + "&" }), t.substr(0, t.length - 1) } }, { key: "getVideoUrl", value: function (e, t, n) { return "youtube" === t ? this.getYoutubeUrl(e.youtube, n) : "vimeo" === t ? this.getVimeoUrl(e.vimeo, n) : "facebook" === t ? this.getFacebookUrl(e.facebook, n) : "custom" === t ? e.url : "" } }, { key: "getVimeoUrl", value: function (e, t) { return "//player.vimeo.com/video/" + t + "?" + this.getQueryString(e) } }, { key: "getYoutubeUrl", value: function (e, t) { var n = this.getQueryString(e); return !0 === e.nocookie ? "//www.youtube-nocookie.com/embed/" + t + "?" + n : "//www.youtube.com/embed/" + t + "?" + n } }, { key: "getFacebookUrl", value: function (e, t) { return "//www.facebook.com/v2.10/plugins/video.php?href=//www.facebook.com/facebook/videos/" + t + "&" + this.getQueryString(e) } }, { key: "getHtml", value: function (e, t, n) { var o = this.getPadding(e.ratio), i = e.classNames; return '\n      <div class="' + i.modalVideo + '" tabindex="-1" role="dialog" aria-label="' + e.aria.openMessage + '" id="' + n + '">\n        <div class="' + i.modalVideoBody + '">\n          <div class="' + i.modalVideoInner + '" id="modal-video-inner-' + n + '">\n            <div class="' + i.modalVideoIframeWrap + '" style="padding-bottom:' + o + '">\n              <button class="' + i.modalVideoCloseBtn + ' js-modal-video-dismiss-btn" aria-label="' + e.aria.dismissBtnMessage + "\"></button>\n              <iframe width='460' height='230' src=\"" + t + "\" frameborder='0' allowfullscreen=" + e.allowFullScreen + ' tabindex="-1" allow="' + (e.allowAutoplay ? "autoplay;" : "") + ' accelerometer; encrypted-media; gyroscope; picture-in-picture" />\n            </div>\n          </div>\n        </div>\n      </div>\n    ' } }]), e }(); n.default = u, t.exports = n.default }, { "../lib/util": 6, "custom-event-polyfill": 1, "es6-object-assign": 2 }], 5: [function (e, t, n) { "use strict"; t.exports = e("./core/") }, { "./core/": 4 }], 6: [function (e, t, n) { "use strict"; Object.defineProperty(n, "__esModule", { value: !0 }); n.append = function (e, t) { var n = document.createElement("div"); for (n.innerHTML = t; n.children.length > 0;)e.appendChild(n.children[0]) }, n.getUniqId = function () { return (Date.now().toString(36) + Math.random().toString(36).substr(2, 5)).toUpperCase() }, n.remove = function (e) { e && e.parentNode && e.parentNode.removeChild(e) }, n.addClass = function (e, t) { e.classList ? e.classList.add(t) : e.className += " " + t }, n.triggerEvent = function (e, t, n) { var o = void 0; window.CustomEvent ? o = new CustomEvent(t, { cancelable: !0 }) : (o = document.createEvent("CustomEvent"), o.initCustomEvent(t, !1, !1, n)), e.dispatchEvent(o) } }, {}] }, {}, [3]);
-  </script> -->
-
-  <!-- <script type="text/javascript">
-    AOS.init({
-      duration: 1000,
-      offset: 50,
-      disable: 'mobile'
-    });
-
-    $(".js-video-button").modalVideo();
-  </script> -->
 
 </body>
 
